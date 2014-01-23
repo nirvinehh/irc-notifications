@@ -147,7 +147,7 @@ sub notify_Pushover {
         $post_data->{url} = $data->{url}
     }
     my $response = $lwp->post(
-        "http://api.pushover.net/1/messages.json",
+        "https://api.pushover.net/1/messages.json",
         [ %{$post_data} ]
     );
 
